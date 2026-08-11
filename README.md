@@ -35,3 +35,4 @@ IELTS-Vocabulary-Battle
     ├── main.js
     └── style.css
 ```
+Updated for Vercel deployment.
