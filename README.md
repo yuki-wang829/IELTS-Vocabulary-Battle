@@ -1,38 +1,22 @@
-# IELTS Vocabulary Battle — Cambridge 14–16
+# Silvia · Shinan IELTS
 
-Classroom vocabulary competition for 2 teams.
+Silvia 的雅思阅读个人网站，包含教师资历、阅读学习介绍、学习需求摘要工具及现有词汇对战。
 
-## Features
+## 本地运行
 
-- 2 teams
-- Rules shown before the game
-- One non-scoring practice example before Round 1
-- 3 scoring rounds
-- 8-second standard timer
-- Mystery event cards displayed for 10 seconds
-- Mystery-card time does not consume the question timer
-- Lowercase vocabulary display
-- Final ranking and review words
-
-## Run with Vite
-
-```bash
+```sh
 npm install
 npm run dev
 ```
 
-## Deploy
+## 构建与部署
 
-This project is ready for Vercel deployment.
-
-Project structure:
-
-```text
-IELTS-Vocabulary-Battle
-├── index.html
-├── package.json
-└── src
-    ├── main.js
-    └── style.css
+```sh
+npm run build
 ```
-Updated for Vercel deployment.
+
+发布目录为 `dist`，可沿用 Vercel 的 Vite 设置。首页位于 `/`，原有双队词汇对战位于 `/vocabulary/`。Vite 配置同时构建两个页面，现有游戏源码保留在 `src/`。
+
+学习需求摘要仅在浏览器中生成，不提交数据。个人照片在 `public/assets/`，资历来自老师提供的介绍素材。
+
+Sites 私有预览和本仓库分别部署。自有域名 DNS 设置由域名服务商管理。
